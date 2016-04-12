@@ -66,7 +66,7 @@ CREATE TABLE mutations (
   known_identifier VARCHAR(255) NOT NULL,
   reference_base   VARCHAR(1) NOT NULL,
   alternative_base VARCHAR(1) NOT NULL,
-  gt		   VARCHAR(3) NOT NULL,
+  gt               VARCHAR(3) NOT NULL,
   quality          FLOAT NOT NULL,
   filter           TEXT,
   info             TEXT,
