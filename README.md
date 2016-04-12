@@ -4,12 +4,12 @@ Repo for teaching purposes in the Advanced Bioinformatics course, UMC Utrecht, 2
 
 For the Pandas Python examples please see the seperate file in the repository
 
-Example of how to use bio-vcf to extract genotypes:
+###Example of how to use bio-vcf to extract genotypes:
 ```bash
 bio-vcf --seval 's.gt' < PIK3CA.vcf
 ```
 
-Example of how to use python to extarct the Genotypes:
+###Example of how to use python to extarct the Genotypes:
 ```python
 infile = open("PIK3CA.vcf",'r')
 
@@ -32,7 +32,7 @@ for line in infile:
 ```
 
 # Selected from favourite examples made by Thomaz and Roel
-## 4 way JOIN with a WHERE
+### A 4 way JOIN with a WHERE
 ```sql
 SELECT Employees.FirstName, SUM(OrderDetails.Quantity*Products.Price) AS CASH FROM OrderDetails
 JOIN Orders
@@ -44,7 +44,7 @@ ON OrderDetails.ProductID = Products.ProductID
 GROUP BY Employees.FirstName
 ```
 
-#CREATE TABLE
+###CREATE TABLE
 ```sql
 ---
 --- Table 'Samples'
