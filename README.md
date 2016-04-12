@@ -30,3 +30,45 @@ for line in infile:
 
 	print(dict(zip(header[8:], gts))
 ```
+
+# Selected from favourite examples made by Thomz and Roel
+## 4 way JOIN with a WHERE
+```sql
+SELECT Employees.FirstName, SUM(OrderDetails.Quantity*Products.Price) AS CASH FROM OrderDetails
+JOIN Orders
+ON OrderDetails.OrderID = Orders.OrderID
+JOIN Employees
+ON Orders.EmployeeID = Employees.EmployeeID
+JOIN Products
+ON OrderDetails.ProductID = Products.ProductID
+GROUP BY Employees.FirstName
+```
+
+#CREATE TABLE
+```sql
+---
+--- Table 'Samples'
+---
+CREATE TABLE samples (
+  id              INTEGER PRIMARY KEY AUTO_INCREMENT NOT NULL,
+  sample_id       INTEGER NOT NULL,
+  --- ... All fields you're interested in ...
+);
+
+---
+--- Table 'Mutations'
+---
+CREATE TABLE mutations (
+  id               INTEGER PRIMARY KEY AUTO_INCREMENT NOT NULL,
+  sample_id        INTEGER NOT NULL,
+  chromosome       INTEGER NOT NULL,
+  position         INTEGER(12) NOT NULL,
+  known_identifier VARCHAR(255) NOT NULL,
+  reference_base   VARCHAR(1) NOT NULL,
+  alternative_base VARCHAR(1) NOT NULL,
+  quality          FLOAT NOT NULL,
+  filter           TEXT,
+  info             TEXT,
+  format           TEXT
+);
+```
