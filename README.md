@@ -31,7 +31,7 @@ for line in infile:
 	print(dict(zip(header[8:], gts))
 ```
 
-# Selected from favourite examples made by Thomz and Roel
+# Selected from favourite examples made by Thomaz and Roel
 ## 4 way JOIN with a WHERE
 ```sql
 SELECT Employees.FirstName, SUM(OrderDetails.Quantity*Products.Price) AS CASH FROM OrderDetails
