@@ -7,8 +7,8 @@
     {
      "name": "1234567",
      "children": [
-      {"name": "ref", "size": 3938},
-      {"name": "alt", "size": 3812},
+      {"name": "ref1", "size": 3938},
+      {"name": "alt1", "size": 3812},
       {"name": "HierarchicalCluster", "size": 6714},
       {"name": "MergeEdge", "size": 743}
      ]
@@ -16,8 +16,8 @@
     {
      "name": "1234568",
      "children": [
-      {"name": "ref", "size": 3534},
-      {"name": "alt", "size": 5731},
+      {"name": "ref2", "size": 3534},
+      {"name": "alt2", "size": 5731},
       {"name": "MaxFlowMinCut", "size": 7840},
       {"name": "ShortestPaths", "size": 5914},
       {"name": "SpanningTree", "size": 3416}
@@ -26,7 +26,7 @@
     {
      "name": "1234569",
      "children": [
-      {"name": "ref", "size": 7074}
+      {"name": "ref3", "size": 7074}
      ]
     }
    ]
