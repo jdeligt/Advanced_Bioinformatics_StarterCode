@@ -6,7 +6,7 @@ For the Pandas Python examples please see the seperate file in the repository
 
 ###Example of how to use bio-vcf to extract genotypes:
 ```bash
-bio-vcf --seval 's.gt' < PIK3CA.vcf
+bio-vcf --seval 's.gt' --num-threads=2 < PIK3CA.vcf
 ```
 
 ###Example of how to use python to extarct the Genotypes:
